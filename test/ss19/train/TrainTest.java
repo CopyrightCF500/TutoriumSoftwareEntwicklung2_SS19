@@ -2,7 +2,6 @@ package ss19.train;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import ss19.train.Train;
 import ss19.train.waggon.Type;
 import ss19.train.waggon.Waggon;
 
