@@ -36,7 +36,7 @@ public class TrainTest {
      * Test of shorten and enlarge method, of class Train.
      */
     @Test(timeout = 1000)
-    public void testIntegrety() {
+    public void testIntegrity() {
         Train instance = new Train();
         assertEquals(1, instance.getCapacity());
         Waggon waggon = instance.getEngine();

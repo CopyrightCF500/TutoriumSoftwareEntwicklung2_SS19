@@ -59,7 +59,12 @@ public class Train {
         return waggon;
     }
 
-    
-    
-    
+    @Override
+    public String toString() {
+        String string = waggon.toString();
+        for(Waggon next = waggon.getNext(); next!=null ;next = next.getNext()){
+            string += next.toString();
+        }
+        return string;
+    }
 }
