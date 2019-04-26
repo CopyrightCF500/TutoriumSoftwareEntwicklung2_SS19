@@ -14,7 +14,7 @@ public enum Type {
      * getter for capacity
      * @return capacity int
      */
-    public int getCapacity(){
+    public int getCapacity() {
         final int cap;
         switch (this) {
           case ENGINE: cap = 1;
@@ -28,5 +28,6 @@ public enum Type {
         }
         return cap;
     }
-    
+
+
 }
