@@ -1,4 +1,4 @@
-package ss19.cars.inter;
+package ss19.cars.inter2;
 
 /**
  * Interface for a Vehicle.

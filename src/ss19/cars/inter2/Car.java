@@ -1,12 +1,14 @@
-package ss19.cars.inter;
+package ss19.cars.inter2;
 
-public class Car implements MotorVehicle{
+public class Car implements Motor, Vehicle , Puller {
 
     private final String color;
 
     private final int capacity;
 
     private final int power;
+
+    private Pullable pullable;
 
     /**
      * Constructor.
@@ -44,5 +46,15 @@ public class Car implements MotorVehicle{
     @Override
     public int getPower() {
         return power;
+    }
+
+    @Override
+    public Pullable getPullable() {
+        return pullable;
+    }
+
+    @Override
+    public void setPullable(Pullable pullable) {
+        this.pullable = pullable;
     }
 }

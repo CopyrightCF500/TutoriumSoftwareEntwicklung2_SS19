@@ -1,6 +1,6 @@
-package ss19.cars.inter;
+package ss19.cars.inter2;
 
-public class Car implements MotorVehicle{
+public class Truck implements  Vehicle, Motor, Puller , Loadable{
 
     private final String color;
 
@@ -8,13 +8,19 @@ public class Car implements MotorVehicle{
 
     private final int power;
 
+    private Pullable pullable;
+
+    private int load;
+
     /**
      * Constructor.
      * @param color
      * @param capacity
      * @param power
+     * @param load
      */
-    public Car(String color, int capacity, int power) {
+    public Truck(String color, int capacity, int power) {
+        this.load = 0;
         if(power>1000)
             throw new IllegalArgumentException();
         this.color = color;
@@ -28,7 +34,7 @@ public class Car implements MotorVehicle{
      */
     @Override
     public int getWheelCount() {
-        return 4;
+        return 6;
     }
 
     @Override
@@ -44,5 +50,25 @@ public class Car implements MotorVehicle{
     @Override
     public int getPower() {
         return power;
+    }
+
+    @Override
+    public Pullable getPullable() {
+        return pullable;
+    }
+
+    @Override
+    public void setPullable(Pullable pullable) {
+        this.pullable = pullable;
+    }
+
+    @Override
+    public int getLoad() {
+        return load;
+    }
+
+    @Override
+    public void setLoad(int load) {
+        this.load = load;
     }
 }

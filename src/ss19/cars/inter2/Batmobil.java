@@ -1,10 +1,10 @@
-package ss19.cars.inter;
+package ss19.cars.inter2;
 
 /**
  * The Batmobil.
  * @author Eduard Bartolovic
  */
-public class Batmobil implements MotorVehicle{
+public class Batmobil implements Vehicle,Motor {
 
     /**
      * Has always 6 wheels

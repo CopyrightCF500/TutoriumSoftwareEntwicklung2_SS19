@@ -1,10 +1,10 @@
-package ss19.cars.inter;
+package ss19.cars.inter2;
 
 /**
  * A Motor extension for Vehicle.
  * @author Eduard Bartolovic
  */
-public interface MotorVehicle extends Vehicle {
+public interface Motor {
 
     /**
      * Getter for Power.
