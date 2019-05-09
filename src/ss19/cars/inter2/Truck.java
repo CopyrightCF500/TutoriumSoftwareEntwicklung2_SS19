@@ -29,8 +29,8 @@ public class Truck implements  Vehicle, Motor, Puller , Loadable{
     }
 
     /**
-     * Has always 4 wheels
-     * @return 4 int
+     * Has always 6 wheels
+     * @return 6 int
      */
     @Override
     public int getWheelCount() {
