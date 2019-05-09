@@ -1,9 +1,17 @@
 package ss19.cars.abc;
 
-public class Batmobil extends MotorVehicle{
+/**
+ * The Batmobil.
+ * @author Eduard Bartolovic
+ */
+public class Batmobil extends VehicleABC implements Motor {
 
     public Batmobil() {
-        super(6,1,"Black",9000);
+        super(6, 1, "Black");
     }
 
+    @Override
+    public int getPower() {
+        return 9000;
+    }
 }

@@ -1,10 +1,12 @@
 package ss19.cars.abc;
 
-public class Car extends VehicleABC implements Motor, Puller{
+public class Truck extends VehicleABC implements Motor, Puller, Loadable {
 
     private final int power;
 
     private Pullable pullable;
+
+    private int load;
 
     /**
      * Constructor.
@@ -12,8 +14,9 @@ public class Car extends VehicleABC implements Motor, Puller{
      * @param capacity
      * @param power
      */
-    public Car(String color, int capacity, int power) {
-        super(4,capacity,color);
+    public Truck(String color, int capacity, int power) {
+        super(6,capacity,color);
+        this.load = 0;
         this.power = power;
     }
 
@@ -30,5 +33,15 @@ public class Car extends VehicleABC implements Motor, Puller{
     @Override
     public void setPullable(Pullable pullable) {
         this.pullable = pullable;
+    }
+
+    @Override
+    public int getLoad() {
+        return load;
+    }
+
+    @Override
+    public void setLoad(int load) {
+        this.load = load;
     }
 }
