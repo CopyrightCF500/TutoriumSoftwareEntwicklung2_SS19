@@ -1,4 +1,4 @@
-package ss19.cars.abcexception.abc;
+package ss19.cars.abcexception;
 
 public class Carriage extends VehicleABC implements Loadable, Pullable {
 

@@ -1,4 +1,4 @@
-package ss19.cars.abcexception.abc;
+package ss19.cars.abcexception;
 
 public interface Loadable {
 

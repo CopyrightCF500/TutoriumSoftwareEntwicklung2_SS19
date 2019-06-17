@@ -1,12 +1,10 @@
-package ss19.cars.abcexception.abc;
+package ss19.cars.abcexception;
 
-public class Truck extends VehicleABC implements Motor, Puller, Loadable {
+public class Car extends VehicleABC implements Motor, Puller {
 
     private final int power;
 
     private Pullable pullable;
-
-    private int load;
 
     /**
      * Constructor.
@@ -14,9 +12,8 @@ public class Truck extends VehicleABC implements Motor, Puller, Loadable {
      * @param capacity
      * @param power
      */
-    public Truck(String color, int capacity, int power) {
-        super(6,capacity,color,800000);
-        this.load = 0;
+    public Car(String color, int capacity, int power) {
+        super(4,capacity,color,500000);
         this.power = power;
     }
 
@@ -33,15 +30,5 @@ public class Truck extends VehicleABC implements Motor, Puller, Loadable {
     @Override
     public void setPullable(Pullable pullable) {
         this.pullable = pullable;
-    }
-
-    @Override
-    public int getLoad() {
-        return load;
-    }
-
-    @Override
-    public void setLoad(int load) {
-        this.load = load;
     }
 }

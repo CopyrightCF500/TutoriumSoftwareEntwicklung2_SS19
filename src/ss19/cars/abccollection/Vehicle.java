@@ -1,4 +1,4 @@
-package ss19.cars.abcexception.abc;
+package ss19.cars.abccollection;
 
 /**
  * Interface for a Vehicle.
@@ -25,6 +25,5 @@ public interface Vehicle {
     String getColor();
 
     void drive(int distance) throws VehicleMalfunctionException;
-
 
 }
